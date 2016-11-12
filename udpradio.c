@@ -59,6 +59,7 @@ int main(int argc, char **argv) {
     hostname = argv[1];
     portno = atoi(argv[2]);
     delay = atoi(argv[4]);
+    delay *= 1000;
 
     serveraddr.sin_family = AF_INET;
     serveraddr.sin_port = htons(portno);
